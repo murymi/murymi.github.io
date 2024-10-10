@@ -43,6 +43,14 @@ img {
     align-items: center;
 }
 
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
 .dp {
     display: flex;
     flex-direction: row;

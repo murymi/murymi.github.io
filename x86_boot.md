@@ -173,10 +173,9 @@ mkdir -p iso/boot/grub
 echo $GRUB_CFG > iso/boot/grub/grub.cfg
 cp a.out iso/boot/a.out
 grub-mkrescue -o os.iso iso
-qemu-system-i386 -cdrom os.iso
 ```
 
-This script builds the ISO and prepares it for GRUB to load. Then, it fires up QEMU, so you can see the **sweet 'H'** on the screen, proving that all your work wasn't in vain.
+This script builds the ISO and prepares it for GRUB to load.
 
 ### Running the Program
 
@@ -186,7 +185,7 @@ To run it, just use:
 qemu-system-i386 -cdrom os.iso
 ```
 
-Boom! The program boots, and you’ve got that **'H' flashing on the screen like a freaking banner**.
+Boom! QEMU fires the hell up and the program boots, and you’ve got that **'H' flashing on the screen like a freaking banner**.
 
 ---
 
